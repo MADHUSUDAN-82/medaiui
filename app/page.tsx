@@ -93,11 +93,13 @@ export default function Home() {
   ))}
 
   {loading && (
-    <div className="flex items-center gap-2 text-gray-300">
-      <span className="text-2xl">🤖</span>
-      <div className="px-4 py-2 rounded-lg bg-[#334155]">Typing...</div>
+    <div className="flex gap-2 bg-gray-300 text-gray-700 px-4 py-2 w-fit rounded-lg shadow">
+      <span className="typing-dot"></span>
+      <span className="typing-dot"></span>
+      <span className="typing-dot"></span>
     </div>
   )}
+
 </div>
 
 
