@@ -69,7 +69,7 @@ export default function Home() {
     {/* Chat Window */}
     <div
   ref={chatWindowRef}
-  className="hide-scrollbar h-[60vh] overflow-y-auto space-y-3 p-2 bg-[#0f172a] rounded-lg border border-gray-700"
+  className="h-[60vh] overflow-y-auto space-y-3 p-2 bg-[#0f172a] rounded-lg border border-gray-700"
 >
   {messages.map((msg, idx) => (
     <div key={idx} className={`flex items-start gap-2 ${msg.role === "user" ? "justify-end" : ""}`}>
@@ -99,6 +99,7 @@ export default function Home() {
     </div>
   )}
 </div>
+
 
 
     {/* Input */}
